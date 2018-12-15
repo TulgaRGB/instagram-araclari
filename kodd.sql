@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1:3306
--- Üretim Zamanı: 01 Ara 2018, 02:46:38
+-- Üretim Zamanı: 15 Ara 2018, 20:27:00
 -- Sunucu sürümü: 5.7.23
 -- PHP Sürümü: 5.6.38
 
@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `etkilesim` (
   `kadi` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
   `toplam` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
 
 -- --------------------------------------------------------
 
@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS `hesap_list` (
   `ad` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
   `resim` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
 
 -- --------------------------------------------------------
 
@@ -85,7 +85,24 @@ CREATE TABLE IF NOT EXISTS `max_id` (
   `kadi` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
   `tur` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `post`
+--
+
+DROP TABLE IF EXISTS `post`;
+CREATE TABLE IF NOT EXISTS `post` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `resim` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
+  `durum` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
+  `tarih` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
+  `kadi` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
+  `aciklama` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
 
 -- --------------------------------------------------------
 
@@ -132,7 +149,7 @@ CREATE TABLE IF NOT EXISTS `unfollow` (
   `toplam_unfollow` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
   `durum` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
 
 -- --------------------------------------------------------
 
