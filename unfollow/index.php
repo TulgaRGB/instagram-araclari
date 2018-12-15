@@ -103,6 +103,7 @@ if ($_SESSION) {
 	<li class="menuLi "><a href="../takip/" class="menuA">TAKİP</a></li>
 	<li class="menuLi aktif"><a href="" class="menuA">UNFOLLOW</a></li>
 	<li class="menuLi"><a href="../etkilesim/" class="menuA">ETKİLEŞİM</a></li>
+	<li class="menuLi "><a href="../upload/" class="menuA">Zamanlı Paylaşım</a></li>
 	<li class="menuLi"><a href="../ayarlar/" class="menuA">AYARLAR</a></li>
 </ul>
 	<center style="margin-top: -190px;">
