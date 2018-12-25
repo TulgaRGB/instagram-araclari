@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1:3306
--- Üretim Zamanı: 15 Ara 2018, 20:27:00
+-- Üretim Zamanı: 25 Ara 2018, 20:30:56
 -- Sunucu sürümü: 5.7.23
 -- PHP Sürümü: 5.6.38
 
@@ -85,7 +85,7 @@ CREATE TABLE IF NOT EXISTS `max_id` (
   `kadi` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
   `tur` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
 
 -- --------------------------------------------------------
 
@@ -166,6 +166,22 @@ CREATE TABLE IF NOT EXISTS `unfollow_list` (
   `istek_kadi` varchar(150) COLLATE utf8_turkish_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `yorum`
+--
+
+DROP TABLE IF EXISTS `yorum`;
+CREATE TABLE IF NOT EXISTS `yorum` (
+  `id` int(200) NOT NULL AUTO_INCREMENT,
+  `kadi` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
+  `yorum` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
+  `islem` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
+  `yapilan` varchar(150) COLLATE utf8_turkish_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

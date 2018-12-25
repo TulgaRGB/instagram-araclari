@@ -81,12 +81,13 @@ if ($_SESSION) {
 </style>
 
 <ul class="menuUl">
-	<li class="menuLi "><a href="../hesap/" class="menuA ">HESAP İŞLEM</a></li>
-	<li class="menuLi"><a href="../takip/" class="menuA">TAKİP</a></li>
-	<li class="menuLi"><a href="../unfollow/" class="menuA">UNFOLLOW</a></li>
-	<li class="menuLi "><a href="../etkilesim/" class="menuA">ETKİLEŞİM</a></li>
-	<li class="menuLi "><a href="../upload/" class="menuA">Zamanlı Paylaşım</a></li>
-	<li class="menuLi aktif"><a href="" class="menuA">AYARLAR</a></li>
+    <li class="menuLi "><a href="../hesap/" class="menuA ">HESAP İŞLEM</a></li>
+    <li class="menuLi "><a href="" class="menuA">TAKİP</a></li>
+    <li class="menuLi"><a href="../unfollow/" class="menuA">UNFOLLOW</a></li>
+    <li class="menuLi "><a href="../etkilesim/" class="menuA">ETKİLEŞİM</a></li>
+    <li class="menuLi "><a href="../upload/" class="menuA">Zamanlı Paylaşım</a></li>
+    <li class="menuLi "><a href="../yorum/" class="menuA">OTO Yorum</a></li>
+    <li class="menuLi aktif"><a href="../ayarlar/" class="menuA">AYARLAR</a></li>
 	
 </ul>
 	<center style="margin-top: -170px;">
