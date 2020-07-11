@@ -1,10 +1,5 @@
 ﻿<?php
-/**
-* PDO db class 
-* author: Mehmet Ibrahim
-* read link for use: http://renklikodlar.net/CLASS/php_PDO_turu_veritabani_sinifi
-* website: http://renklikodlar.net
-*/
+
 
 class db {
  
